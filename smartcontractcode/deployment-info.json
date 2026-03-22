@@ -1,0 +1,27 @@
+{
+  "network": "Lisk Sepolia Testnet",
+  "chainId": 4202,
+  "contractAddress": "0x49728D5c119C0497c2478CD54c63097ed47Ce9E1",
+  "contractName": "BridgeToken",
+  "tokenSymbol": "BRG",
+  "tokenName": "BridgeToken",
+  "deploymentTxHash": "0x82ea3d0b127073d2ddb3cad45c412d5f31ff0b14fce951679ce9837461b93e17",
+  "deploymentBlock": 34427202,
+  "deployer": "0x6D21167d874C842386e8c484519B5ddBBaB87b43",
+  "rpcUrl": "https://rpc.sepolia-api.lisk.com",
+  "blockExplorer": "https://sepolia-blockscout.lisk.com",
+  "contractExplorerUrl": "https://sepolia-blockscout.lisk.com/address/0x49728D5c119C0497c2478CD54c63097ed47Ce9E1",
+  "constants": {
+    "maxSupply": "10000000000000000000000000",
+    "maxSupplyFormatted": "10,000,000 BRG",
+    "faucetAmount": "100000000000000000000",
+    "faucetAmountFormatted": "100 BRG",
+    "cooldownTime": 86400,
+    "cooldownTimeFormatted": "24 hours"
+  },
+  "initialSupply": "1000000000000000000000000",
+  "initialSupplyFormatted": "1,000,000 BRG",
+  "deploymentDate": "2026-03-22",
+  "gasUsed": 2295329,
+  "gasCost": "0.000000000583013566 ETH"
+}
