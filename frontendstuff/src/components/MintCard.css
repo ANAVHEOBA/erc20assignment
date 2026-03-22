@@ -1,0 +1,175 @@
+.mint-card {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+  max-width: 500px;
+  margin: 24px auto;
+  border: 2px solid #fbbf24;
+}
+
+.mint-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mint-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.mint-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.mint-subtitle {
+  margin: 4px 0 0 0;
+  color: #92400e;
+  font-size: 14px;
+}
+
+.owner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  font-size: 13px;
+  color: #92400e;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.owner-badge svg {
+  color: #f59e0b;
+}
+
+.mint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mint-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mint-input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.mint-input-group input {
+  padding: 12px 16px;
+  border: 2px solid #fbbf24;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.2s;
+  font-family: inherit;
+  background: white;
+}
+
+.mint-input-group input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.mint-input-group input:disabled {
+  background: #fef3c7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.mint-button {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.mint-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.5);
+}
+
+.mint-button:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.not-owner-message {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fbbf24;
+  border-radius: 12px;
+  color: #92400e;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mint-success {
+  padding: 16px;
+  background: #f0fdf4;
+  border: 2px solid #86efac;
+  border-radius: 12px;
+  color: #16a34a;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mint-success svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.mint-error {
+  padding: 16px;
+  background: #fef2f2;
+  border: 2px solid #fecaca;
+  border-radius: 12px;
+  color: #dc2626;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mint-error svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
