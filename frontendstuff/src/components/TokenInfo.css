@@ -6,21 +6,22 @@
 }
 
 .info-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: rgba(13, 4, 26, 0.8);
+  border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.2s;
+  backdrop-filter: blur(10px);
 }
 
 .info-card:hover {
-  border-color: #d1d5db;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border-color: #00F5FF;
+  box-shadow: 0 4px 20px rgba(0, 245, 255, 0.2);
 }
 
 .balance-card {
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  border-color: #bfdbfe;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(0, 245, 255, 0.1) 100%);
+  border-color: rgba(0, 245, 255, 0.4);
 }
 
 .card-header {
@@ -33,7 +34,7 @@
 .card-label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #6b7280;
+  color: #a1a1aa;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -41,33 +42,33 @@
 .card-value {
   font-size: 2rem;
   font-weight: 700;
-  color: #111827;
+  color: white;
   line-height: 1.2;
 }
 
 .card-value-secondary {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #374151;
+  color: #e2e8f0;
   line-height: 1.3;
 }
 
 .card-subtitle {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: #a1a1aa;
   margin-top: 0.25rem;
 }
 
 .token-symbol {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #2563eb;
+  color: #00F5FF;
 }
 
 .token-symbol-sm {
   font-size: 1rem;
   font-weight: 500;
-  color: #6b7280;
+  color: #8B5CF6;
 }
 
 .loading-skeleton {

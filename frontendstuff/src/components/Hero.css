@@ -1,0 +1,119 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  min-height: calc(100vh - 80px); /* Adjust for header */
+  background: radial-gradient(circle at center, #1e0b3c 0%, #0d041a 100%);
+  color: white;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0 0 1.5rem 0;
+  color: #00F5FF;
+  text-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.buy-button {
+  background: linear-gradient(135deg, #00F5FF 0%, #8B5CF6 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.buy-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 245, 255, 0.6);
+}
+
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  box-shadow: 0 0 50px rgba(139, 92, 246, 0.3);
+  animation: float 6s ease-in-out infinite;
+  border: 4px solid rgba(0, 245, 255, 0.2);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 968px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .buy-button {
+    width: 100%;
+    padding: 1rem;
+  }
+}

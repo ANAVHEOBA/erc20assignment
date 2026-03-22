@@ -1,10 +1,11 @@
 .faucet-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: rgba(13, 4, 26, 0.8);
+  border: 1px solid rgba(0, 245, 255, 0.2);
   border-radius: 16px;
   padding: 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  max-width: 100%;
 }
 
 .faucet-header {
@@ -17,7 +18,7 @@
 .faucet-icon {
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #00F5FF 0%, #8B5CF6 100%);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -28,19 +29,19 @@
 .faucet-title {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #111827;
+  color: white;
   margin: 0 0 0.25rem 0;
 }
 
 .faucet-subtitle {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: #a1a1aa;
   margin: 0;
 }
 
 .cooldown-display {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -49,7 +50,7 @@
 .cooldown-label {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #6b7280;
+  color: #a1a1aa;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
@@ -59,10 +60,11 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .cooldown-time.ready {
-  color: #10b981;
+  color: #00F5FF;
 }
 
 .cooldown-time.waiting {
@@ -72,14 +74,14 @@
 .progress-bar {
   width: 100%;
   height: 8px;
-  background: #e5e7eb;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(90deg, #00F5FF 0%, #8B5CF6 100%);
   transition: width 1s linear;
   border-radius: 4px;
 }
