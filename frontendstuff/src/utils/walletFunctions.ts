@@ -84,6 +84,7 @@ export async function addTokenToWallet(
         address: tokenAddress,
         symbol: tokenSymbol,
         decimals: tokenDecimals,
+        image: 'https://raw.githubusercontent.com/ANAVHEOBA/erc20assignment/main/logo.png',
       },
     },
   });
